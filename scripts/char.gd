@@ -15,7 +15,7 @@ var facing = Vector2.DOWN
 var nearest_interactable = null
 signal get_interaction
 
-signal nearest_interactable_changed
+signal nearest_interactable_changed(nearest_interactable)
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -96,7 +96,7 @@ func check_for_interactables():
 	if next_nearest_interactable != self.nearest_interactable or not is_instance_valid(next_nearest_interactable):
 		self.nearest_interactable = next_nearest_interactable
 		emit_signal("nearest_interactable_changed", self.nearest_interactable)
-	
+
 
 		
 func attempt_interaction():
