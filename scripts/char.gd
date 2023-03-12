@@ -33,17 +33,19 @@ func _process(delta):
 
 
 func _physics_process(delta):
+	#todo:
+	#do we want 8 direction or four direction movement??
 	var direction = Vector2.ZERO
 	if(Input.is_action_pressed("move_up")):
 		$AnimatedSprite.animation = "walk_up"
 		direction.y -= 1
-	if(Input.is_action_pressed("move_down")):
+	elif(Input.is_action_pressed("move_down")):
 		$AnimatedSprite.animation = "walk_down"
 		direction.y += 1
-	if(Input.is_action_pressed("move_left")):
+	elif(Input.is_action_pressed("move_left")):
 		$AnimatedSprite.animation = "walk_left"
 		direction.x -= 1
-	if(Input.is_action_pressed("move_right")):
+	elif(Input.is_action_pressed("move_right")):
 		$AnimatedSprite.animation = "walk_right"
 		direction.x += 1
 	if(direction.length() > 0):
