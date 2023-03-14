@@ -1,0 +1,31 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://DialogueSystem/DialogueTheme.tres" type="Theme" id=1]
+[ext_resource path="res://art_assets/minimal_text_box.png" type="Texture" id=2]
+
+[node name="DialogueWindow" type="Node"]
+
+[node name="NinePatchRect" type="NinePatchRect" parent="."]
+margin_right = 288.0
+margin_bottom = 180.0
+theme = ExtResource( 1 )
+texture = ExtResource( 2 )
+patch_margin_left = 8
+patch_margin_top = 8
+patch_margin_right = 8
+patch_margin_bottom = 8
+
+[node name="RichTextLabel" type="RichTextLabel" parent="NinePatchRect"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 10.0
+margin_top = 10.0
+margin_right = -10.0
+margin_bottom = -10.0
+text = "    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+
+[node name="Panel" type="Panel" parent="."]
+visible = false
+margin_right = 250.0
+margin_bottom = 100.0
+theme = ExtResource( 1 )

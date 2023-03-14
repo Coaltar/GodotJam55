@@ -10,19 +10,18 @@ config_version=4
 
 _global_script_classes=[ {
 "base": "Area2D",
-"class": "Interactable",
+"class": "Actionable",
 "language": "GDScript",
-"path": "res://scripts/interactable.gd"
+"path": "res://ActionSystem/Actionable.gd"
 } ]
 _global_script_class_icons={
-"Interactable": ""
+"Actionable": ""
 }
 
 [application]
 
 config/name="GodotJam55"
-run/main_scene="res://scenes/DebugRoom.tscn"
-config/icon="res://icon.png"
+run/main_scene="res://Levels/DebugRoom/DebugRoom.tscn"
 
 [global]
 
