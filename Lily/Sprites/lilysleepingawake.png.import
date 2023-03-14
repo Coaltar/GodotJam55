@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/lilysleepingawake.png-9a2d5a6802379514501d0fc8b4e65287.stex"
+path="res://.import/lilysleepingawake.png-7ad54e35edb80f0351aa39413ef8dd61.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/characters/lily/lilysleepingawake.png"
-dest_files=[ "res://.import/lilysleepingawake.png-9a2d5a6802379514501d0fc8b4e65287.stex" ]
+source_file="res://Lily/Sprites/lilysleepingawake.png"
+dest_files=[ "res://.import/lilysleepingawake.png-7ad54e35edb80f0351aa39413ef8dd61.stex" ]
 
 [params]
 

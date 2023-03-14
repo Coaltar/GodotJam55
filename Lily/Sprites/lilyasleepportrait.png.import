@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/lilyasleepportrait.png-c2e646d7fae6a9f2e45643a671e073ab.stex"
+path="res://.import/lilyasleepportrait.png-20f5a85d301d9377feaf9858fea11917.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/characters/lily/lilyasleepportrait.png"
-dest_files=[ "res://.import/lilyasleepportrait.png-c2e646d7fae6a9f2e45643a671e073ab.stex" ]
+source_file="res://Lily/Sprites/lilyasleepportrait.png"
+dest_files=[ "res://.import/lilyasleepportrait.png-20f5a85d301d9377feaf9858fea11917.stex" ]
 
 [params]
 
