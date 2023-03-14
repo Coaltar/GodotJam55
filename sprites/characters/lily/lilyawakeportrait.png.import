@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/grass_sheet.png-0b843b2463b92748fcb814f7ef014155.stex"
+path="res://.import/lilyawakeportrait.png-33d45d8a11346f4c3337dffa3d84e72c.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/grass_sheet.png"
-dest_files=[ "res://.import/grass_sheet.png-0b843b2463b92748fcb814f7ef014155.stex" ]
+source_file="res://sprites/characters/lily/lilyawakeportrait.png"
+dest_files=[ "res://.import/lilyawakeportrait.png-33d45d8a11346f4c3337dffa3d84e72c.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=false
+flags/filter=true
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
