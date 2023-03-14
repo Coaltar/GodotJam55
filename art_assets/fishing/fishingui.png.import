@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/lilywalkingawake.png-c0556e453ea90d5ff3e1ebb20c76cbc9.stex"
+path="res://.import/fishingui.png-56fda1528af87b5619e52d698e631ce9.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/characters/lily/lilywalkingawake.png"
-dest_files=[ "res://.import/lilywalkingawake.png-c0556e453ea90d5ff3e1ebb20c76cbc9.stex" ]
+source_file="res://art_assets/fishing/fishingui.png"
+dest_files=[ "res://.import/fishingui.png-56fda1528af87b5619e52d698e631ce9.stex" ]
 
 [params]
 

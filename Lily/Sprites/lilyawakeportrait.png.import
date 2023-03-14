@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/lilyawakeportrait.png-e74c9ef2eae03024d244371399b29e90.stex"
+path="res://.import/lilyawakeportrait.png-33d45d8a11346f4c3337dffa3d84e72c.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Lily/Sprites/lilyawakeportrait.png"
-dest_files=[ "res://.import/lilyawakeportrait.png-e74c9ef2eae03024d244371399b29e90.stex" ]
+source_file="res://sprites/characters/lily/lilyawakeportrait.png"
+dest_files=[ "res://.import/lilyawakeportrait.png-33d45d8a11346f4c3337dffa3d84e72c.stex" ]
 
 [params]
 
