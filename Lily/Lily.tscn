@@ -2,7 +2,7 @@
 
 [ext_resource path="res://Lily/Lily.gd" type="Script" id=1]
 [ext_resource path="res://Lily/Indicator.gd" type="Script" id=2]
-[ext_resource path="res://art_assets/lilywalkanimationsv1.png" type="Texture" id=3]
+[ext_resource path="res://lilywalkanimationsv1.png" type="Texture" id=3]
 [ext_resource path="res://art_assets/question_bubble.png" type="Texture" id=4]
 [ext_resource path="res://DialogueSystem/Dialogue.tscn" type="PackedScene" id=5]
 
