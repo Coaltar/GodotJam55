@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/fishingui.png-5211b20c08f2b04bd5c03f30ee91b81d.stex"
+path="res://.import/fishingblahaj.png-692388789b7fa4170320339063ba866c.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/fishing/fishingui.png"
-dest_files=[ "res://.import/fishingui.png-5211b20c08f2b04bd5c03f30ee91b81d.stex" ]
+source_file="res://sprites/fishing/fishingblahaj.png"
+dest_files=[ "res://.import/fishingblahaj.png-692388789b7fa4170320339063ba866c.stex" ]
 
 [params]
 

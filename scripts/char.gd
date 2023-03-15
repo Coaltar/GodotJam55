@@ -50,6 +50,7 @@ func _physics_process(delta):
 		$AnimatedSprite.play()
 	else:
 		$AnimatedSprite.stop()
+		$AnimatedSprite.frame = 0;
 			
 		
 	direction = direction.normalized()

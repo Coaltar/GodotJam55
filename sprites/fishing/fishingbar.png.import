@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/water_texture_v1.png-1e74f4644ce0fd5fe661ec53964b2e3a.stex"
+path="res://.import/fishingbar.png-7f56fd5aed4bb3ad0adbff8b4d4a5b84.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://water_texture_v1.png"
-dest_files=[ "res://.import/water_texture_v1.png-1e74f4644ce0fd5fe661ec53964b2e3a.stex" ]
+source_file="res://sprites/fishing/fishingbar.png"
+dest_files=[ "res://.import/fishingbar.png-7f56fd5aed4bb3ad0adbff8b4d4a5b84.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
