@@ -1,8 +1,9 @@
-[gd_resource type="TileSet" load_steps=5 format=2]
+[gd_resource type="TileSet" load_steps=6 format=2]
 
 [ext_resource path="res://art_assets/tile_map_v2.png" type="Texture" id=1]
 [ext_resource path="res://art_assets/grass_sheet.png" type="Texture" id=2]
 [ext_resource path="res://art_assets/water_texture_v1.png" type="Texture" id=3]
+[ext_resource path="res://materials/water_material.tres" type="Material" id=4]
 
 [sub_resource type="ConvexPolygonShape2D" id=2]
 points = PoolVector2Array( 0, 0, 32, 0, 32, 32, 0, 32 )
@@ -101,6 +102,7 @@ points = PoolVector2Array( 0, 0, 32, 0, 32, 32, 0, 32 )
 4/name = "water_texture_v1.png 4"
 4/texture = ExtResource( 3 )
 4/tex_offset = Vector2( 0, 0 )
+4/material = ExtResource( 4 )
 4/modulate = Color( 1, 1, 1, 1 )
 4/region = Rect2( 0, 0, 32, 32 )
 4/tile_mode = 1
