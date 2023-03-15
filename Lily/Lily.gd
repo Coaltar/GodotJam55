@@ -9,7 +9,8 @@ const speed = 100
 const interaction_distance = 50
 var facing = Vector2.DOWN
 
-
+#var DialogueSystem = load("res://DialogueSystem/Dialogue.tscn")
+onready var DialogueSystem = $HUD/DialogueWindow
 #var attempt_interaction = false
 
 
@@ -20,11 +21,12 @@ signal nearest_actionable_changed(nearest_actionable)
 
 func _ready():
 	$Indicator.hide()
+	#DialogueSystem.hide()
 	pass
 
 func _process(delta):	
 	if(Input.is_action_just_pressed("interact")):
-		attempt_interaction()
+		print("process interact")
 	if(Input.is_action_just_pressed("cancel")):
 		print("cancel")
 		
@@ -104,17 +106,5 @@ func check_for_interactables():
 		emit_signal("nearest_actionable_changed", self.nearest_actionable)
 
 
-		
-func attempt_interaction():
-	pass
-
-
 func _on_Char_nearest_interactable_changed():
 	pass # Replace with function body.
-
-func _on_obstacle_actioned():
-	print("AHHH")
-	
-	
-func _on_Rock_actioned():
-	print("AHHH")

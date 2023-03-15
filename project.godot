@@ -23,6 +23,10 @@ _global_script_class_icons={
 config/name="GodotJam55"
 run/main_scene="res://Levels/DebugRoom/DebugRoom.tscn"
 
+[autoload]
+
+SignalBus="*res://Singletons/SignalBus.gd"
+
 [global]
 
 collision=false

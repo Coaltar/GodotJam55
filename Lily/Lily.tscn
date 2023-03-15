@@ -1,9 +1,10 @@
-[gd_scene load_steps=24 format=2]
+[gd_scene load_steps=25 format=2]
 
 [ext_resource path="res://Lily/Lily.gd" type="Script" id=1]
 [ext_resource path="res://Lily/Indicator.gd" type="Script" id=2]
 [ext_resource path="res://art_assets/lilywalkanimationsv1.png" type="Texture" id=3]
 [ext_resource path="res://art_assets/question_bubble.png" type="Texture" id=4]
+[ext_resource path="res://DialogueSystem/Dialogue.tscn" type="PackedScene" id=5]
 
 [sub_resource type="RectangleShape2D" id=1]
 
@@ -98,6 +99,9 @@ animations = [ {
 
 [node name="Lily" type="KinematicBody2D"]
 script = ExtResource( 1 )
+__meta__ = {
+"_editor_description_": "Our girl!zs"
+}
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource( 1 )
@@ -119,7 +123,12 @@ collision_mask = 256
 shape = SubResource( 19 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( 1, 0 )
 current = true
 zoom = Vector2( 0.25, 0.25 )
+
+[node name="HUD" type="CanvasLayer" parent="."]
+
+[node name="DialogueWindow" parent="HUD" instance=ExtResource( 5 )]
 
 [connection signal="nearest_actionable_changed" from="." to="Indicator" method="_on_Lily_nearest_actionable_changed"]
