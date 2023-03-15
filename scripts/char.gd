@@ -35,17 +35,22 @@ func _process(delta):
 func _physics_process(delta):
 	var direction = Vector2.ZERO
 	if(Input.is_action_pressed("move_up")):
-		$AnimatedSprite.animation = "walk_up"
 		direction.y -= 1
 	if(Input.is_action_pressed("move_down")):
-		$AnimatedSprite.animation = "walk_down"
 		direction.y += 1
 	if(Input.is_action_pressed("move_left")):
-		$AnimatedSprite.animation = "walk_left"
 		direction.x -= 1
 	if(Input.is_action_pressed("move_right")):
-		$AnimatedSprite.animation = "walk_right"
 		direction.x += 1
+		
+	if(direction.x > 0 && ($AnimatedSprite.animation == "walk_left" || direction.y == 0)):
+		$AnimatedSprite.animation = "walk_right";
+	if(direction.x < 0 && ($AnimatedSprite.animation == "walk_right" || direction.y == 0)):
+		$AnimatedSprite.animation = "walk_left";
+	if(direction.y > 0 && ($AnimatedSprite.animation == "walk_up" || direction.x == 0)):
+		$AnimatedSprite.animation = "walk_down";
+	if(direction.y < 0 && ($AnimatedSprite.animation == "walk_down" || direction.x == 0)):
+		$AnimatedSprite.animation = "walk_up";
 	if(direction.length() > 0):
 		$AnimatedSprite.play()
 	else:
