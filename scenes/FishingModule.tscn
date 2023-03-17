@@ -1,10 +1,48 @@
 [gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://fishing.gd" type="Script" id=1]
-[ext_resource path="res://sprites/fishing/fishingui.png" type="Texture" id=2]
-[ext_resource path="res://sprites/fishing/fishingbar.png" type="Texture" id=3]
-[ext_resource path="res://sprites/fishing/fishingblahaj.png" type="Texture" id=4]
-[ext_resource path="res://scenes/FishingBlahaj.gd" type="Script" id=5]
+[ext_resource path="res://art_assets/fishing/fishingui.png" type="Texture" id=2]
+[ext_resource path="res://art_assets/fishing/fishingbar.png" type="Texture" id=3]
+[ext_resource path="res://art_assets/fishing/fishingblahaj.png" type="Texture" id=4]
+
+[sub_resource type="GDScript" id=1]
+script/source = "extends TextureRect
+
+var fishPositionX = 5;
+var fishPosition = 80;
+var fishPositionMin = 5;
+var fishPositionMax = 80;
+
+var aggression = 0;
+var deltaAccumulator = 0;
+var updateShake = 0.05;
+var shakeOffsetX = 0;
+var shakeOffsetY = 0;
+var random = RandomNumberGenerator.new();
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	fishPosition = clamp(fishPosition, fishPositionMin, fishPositionMax);
+	deltaAccumulator += delta;
+	if(deltaAccumulator > updateShake):
+		shakeOffsetX = 1 - random.randf() * 2;
+		shakeOffsetY = 1 - random.randf() * 2;
+		deltaAccumulator = 0;
+	$\".\".rect_position.y = fishPosition + shakeOffsetY;
+	$\".\".rect_position.x = fishPositionX + shakeOffsetX;
+	pass
+
+func GetIsFishInBar(var barMin, var barMax):
+	return fishPosition + ($\".\".rect_size.y / 2)  > barMin && fishPosition + ($\".\".rect_size.y / 2) < barMax;
+
+func SetAggression(var aggression):
+	self.aggression = aggression;
+"
 
 [node name="Control" type="Control"]
 script = ExtResource( 1 )
@@ -43,4 +81,4 @@ margin_top = 4.0
 margin_right = 16.0
 margin_bottom = 15.0
 texture = ExtResource( 4 )
-script = ExtResource( 5 )
+script = SubResource( 1 )
