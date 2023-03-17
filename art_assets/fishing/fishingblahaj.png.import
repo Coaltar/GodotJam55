@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/beddie_bed.png-cbfad4894cdbbba8989170bdf237e80c.stex"
+path="res://.import/fishingblahaj.png-c917a99f757e362edbc67ba1b8727539.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art_assets/beddie_bed.png"
-dest_files=[ "res://.import/beddie_bed.png-cbfad4894cdbbba8989170bdf237e80c.stex" ]
+source_file="res://art_assets/fishing/fishingblahaj.png"
+dest_files=[ "res://.import/fishingblahaj.png-c917a99f757e362edbc67ba1b8727539.stex" ]
 
 [params]
 

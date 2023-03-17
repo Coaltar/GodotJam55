@@ -7,10 +7,10 @@ void fragment(){
 	vec2 roundedUV = vec2(floor(64.0 * UV.x) / 64.0, floor(64.0 * UV.y) / 64.0);
 	vec4 water = texture(TEXTURE, vec2(
 	roundedUV.x + 
-        0.01 * cos((2.0 * TIME) + (150.0 * roundedUV.y)) +
-        0.005 * cos((0.66 * TIME) + (123.0  *roundedUV.y)) +
-        0.005 * cos((0.47 * TIME) + (47.0  * roundedUV.y))  +
-        0.016 * cos((0.33 * TIME) + (71.0  * roundedUV.y)), roundedUV.y));
+        0.025 * cos((2.0 * TIME) + (150.0 * roundedUV.y)) +
+        0.01 * cos((0.66 * TIME) + (123.0  *roundedUV.y)) +
+        0.01 * cos((0.47 * TIME) + (47.0  * roundedUV.y))  +
+        0.032 * cos((0.33 * TIME) + (71.0  * roundedUV.y)), roundedUV.y));
 		water.a = 0.5;
   COLOR = water;
 }"
