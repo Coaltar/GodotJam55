@@ -12,5 +12,46 @@
     {
       "Lily": "oops"
     }
+  ],
+  "ghost": [
+    {
+      "Ghost": "I'm dead"
+    },
+    {
+      "Lily": "Yeah I can tell"
+    },
+    {
+      "Lily": "How did you die?"
+    },
+    {
+      "Ghost": "Not sure. Probably a death of despair...."
+    },
+    {
+      "Lily": "..."
+    },
+    {
+      "Ghost": "..."
+    },
+    {
+      "Lily": "..."
+    },
+    {
+      "Ghost": "..."
+    },
+    {
+      "Lily": "..."
+    },
+    {
+      "Ghost": "..."
+    },
+    {
+      "Ghost": "Nah just kidding, I died sky diving, I was a pretty cool guy. 8)\n\n... How'd you die?"
+    },
+    {
+      "Lily": "I'm not dead! Asshole...."
+    },
+    {
+      "Ghost": "You sure about that?"
+    }
   ]
 }

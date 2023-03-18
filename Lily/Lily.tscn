@@ -1,10 +1,12 @@
-[gd_scene load_steps=26 format=2]
+[gd_scene load_steps=28 format=2]
 
 [ext_resource path="res://Lily/Lily.gd" type="Script" id=1]
 [ext_resource path="res://Lily/Indicator.gd" type="Script" id=2]
 [ext_resource path="res://lilywalkanimationsv1.png" type="Texture" id=3]
 [ext_resource path="res://art_assets/question_bubble.png" type="Texture" id=4]
 [ext_resource path="res://DialogueSystem/Dialogue.tscn" type="PackedScene" id=5]
+[ext_resource path="res://scenes/FishingModule.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Lily/FishingWindow.gd" type="Script" id=7]
 
 [sub_resource type="RectangleShape2D" id=1]
 
@@ -133,7 +135,23 @@ zoom = Vector2( 0.5, 0.5 )
 
 [node name="DialogueWindow" parent="HUD" instance=ExtResource( 5 )]
 
+[node name="FishingWindow" type="Control" parent="HUD"]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -210.0
+margin_top = -1.0
+margin_right = -170.0
+margin_bottom = 39.0
+rect_scale = Vector2( 3, 3 )
+script = ExtResource( 7 )
+
+[node name="FishingMinigame" parent="HUD/FishingWindow" instance=ExtResource( 6 )]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = SubResource( 20 )
 
 [connection signal="nearest_actionable_changed" from="." to="Indicator" method="_on_Lily_nearest_actionable_changed"]
+[connection signal="start_game" from="HUD/FishingWindow" to="HUD/FishingWindow/FishingMinigame" method="_on_FishingWindow_start_game"]
+[connection signal="win_game" from="HUD/FishingWindow/FishingMinigame" to="HUD/FishingWindow" method="_on_FishingMinigame_win_game"]
