@@ -8,14 +8,17 @@ extends KinematicBody2D
 const speed = 100
 const interaction_distance = 50
 
-
 var attempt_interaction = false
-
 var facing = Vector2.DOWN
 var nearest_interactable = null
 signal get_interaction
-
 signal nearest_interactable_changed
+
+enum PlayerState {
+	Fishing,
+	Walking
+}
+
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
