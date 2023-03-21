@@ -3,10 +3,10 @@ extends Node
 
 var fishingProgress = 10;
 var fishingBarPosition = 0;
-var fishingBarSize = 8;
+var fishingBarSize = 20;
 
 var fishingGrow = 1;
-var fishingDecay = 1;
+var fishingDecay = .5;
 
 
 var progressStartPosition = 92;
@@ -28,7 +28,8 @@ var barMin = 92;
 var barMax = 4;
 
 
-signal win_game
+var fish_id = ""
+signal win_game(fish_id)
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -83,12 +84,16 @@ func SetBarSize(var barSize):
 
 
 func win_game():
+	print(self.fish_id)
+	emit_signal("win_game", self.fish_id)
 	self.set_process(false)
-	emit_signal("win_game")
+	get_tree().paused = false
 	
 
-func _on_FishingWindow_start_game(settings):
-	print(settings)
+func _on_FishingWindow_start_game(fish_id):
+	print(fish_id)
+	get_tree().paused = true
 	self.set_process(true)
 	self.fishingProgress = startingProgress
+	self.fish_id = fish_id
 	pass # Replace with function body.

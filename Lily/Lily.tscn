@@ -134,14 +134,17 @@ zoom = Vector2( 0.5, 0.5 )
 [node name="HUD" type="CanvasLayer" parent="."]
 
 [node name="DialogueWindow" parent="HUD" instance=ExtResource( 5 )]
+margin_left = 1.0
+margin_right = 1.0
 
 [node name="FishingWindow" type="Control" parent="HUD"]
+pause_mode = 2
 anchor_left = 0.5
 anchor_right = 0.5
-margin_left = -210.0
-margin_top = -1.0
-margin_right = -170.0
-margin_bottom = 39.0
+margin_left = -180.0
+margin_top = 94.0
+margin_right = -140.0
+margin_bottom = 134.0
 rect_scale = Vector2( 3, 3 )
 script = ExtResource( 7 )
 

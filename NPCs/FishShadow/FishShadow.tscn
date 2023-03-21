@@ -93,7 +93,7 @@ shape = SubResource( 1 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 17 )
-frame = 2
+frame = 13
 playing = true
 
 [connection signal="actioned" from="ActionableNode" to="." method="_on_ActionableNode_actioned"]

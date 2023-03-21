@@ -21,7 +21,7 @@ _global_script_class_icons={
 [application]
 
 config/name="GodotJam55"
-run/main_scene="res://Levels/DebugRoom/DebugRoom.tscn"
+run/main_scene="res://TitleScreen/TitleScreen.tscn"
 
 [autoload]
 
@@ -37,6 +37,8 @@ window/stretch/aspect="keep"
 [global]
 
 collision=false
+scene=false
+render=false
 
 [gui]
 
